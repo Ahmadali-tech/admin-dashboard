@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive dashboard panel</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <aside>
+        <div class="top">
+        <div class="logo">
+                
+        <img src="dashboard.jpg" alt="dashboard admin">
+                <h2 class="h2">CAR<span class="danger">SHOWROOM</span></h2>
+                <span class="material-icons">close</span>
+            </div>
+    
+        </div>
+        <div class="sidebar">
+            <a href="#">
+                <span class="material-icons">dashboard</span><h3>Dashboard</h3>
+            </a> 
+                <a href="#">
+                    <span class="material-icons">
+                        people_alt
+                        </span><h3>People view</h3>
+                </a>
+                <a href="#">
+                <span class="material-icons">
+                    list_alt
+                    </span><h3>Orderlist</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons">
+                    leaderboard
+                    </span><h3>Veiw-listload</h3>
+            </a>
+            <a href="#" class="active">
+                <span class="material-icons">
+                    mail_outline
+                </span>
+                <h3>Mail-Messages</h3>
+                <span2 class="span2">12</span2>
+            </a>
+            
+            <a href="#"><span class="material-icons">production_quantity_limits
+            </span>   <h3>Production line</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons">
+                    report
+                    </span><h3>Reports Schedule</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons">
+                    add
+                    </span><h3>AddProduct</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons">
+                    logout
+                    </span></span><h3>logout</h3>
+            </a>
+        </div>
+    </aside>
+    <main>
+        <h4 class="h4">Dashboard</h4>
+        <div class="main2">
+        <div class="sales">
+            <div class="salesAnalytics">
+                <span class="material-icons">
+                    analytics
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h5 class="h5">Total sale</h5>
+                            <h1 class="h1">$80,000</h1>
+                        </div>
+                        <div class="progressbar">
+                            <svg>
+                                <circle cx="38" cy="37" r="36"></circle>
+                            </svg>
+                            <div class="number3">
+                                <p class="p5">81%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                    <small class="text-muted">last 24 Hours</small>
+                </div>
+            <div class="Expences">
+                <div class="ExpencesAnalytics">
+                    <span class="material-icons">
+                        text_decrease
+                        </span>
+                        <div class="middle">
+                            <div class="left">
+                                <h5>Total Expences</h5>
+                                <h1>$50,000</h1>
+                            </div>
+                            <div class="progressbar2">
+                                <svg>
+                                    <circle cx="38" cy="37" r="36"></circle>
+                                </svg>
+                                <div class="number3">
+                                    <p class="p5">50%</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        </div>
+                        <small class="text-muted">last 24 Hours</small>
+                     </div>
+                <div class="Revenue">
+                    <div class="RevenueAnalytics">
+                        <span class="material-icons">
+                            text_increase
+                            </span>
+                            <div class="middle">
+                                <div class="left">
+                                    <h5>Total Revenue</h5>
+                                    <h1>$60,000</h1>
+                                </div>
+                                <div class="progressbar2">
+                                    <svg>
+                                        <circle cx="38" cy="37" r="36"></circle>
+                                    </svg>
+                                    <p9 class="p4">71%</p9>
+                              </div>
+                            
+                            </div>
+        
+                            </div>
+                            <small class="text-muted">last 24 Hours</small>
+        
+                    </div>
+        </div>
+        <div class="ADDCHART">
+            <div class="GRAPHBOX">
+                <h1 class="text"></h1>
+                <div class="box">
+                        <canvas id="myChart"></canvas>
+                      </div>
+                </div>
+            </div>
+        <div class="Order-section">
+            <h2>RecentOrder</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>product name</th>
+                        <th>product Payment</th>
+                        <th>product Order</th>
+                        <th>product Status</th>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Foldable mini product</td>
+                        <td>Through voucher</td>
+                        <td>867481</td>
+                        <td>3-09-2020</td>
+                        <td class="td">Details</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Mobile 3d</td>
+                        <td>HBL</td>
+                        <td>86533</td>
+                        <td>3-09-2020</td>
+                        <td class="td">Details</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Rolex</td>
+                        <td>Through voucher</td>
+                        <td>787888</td>
+                        <td>7-09-2020</td>
+                        <td class="td">Details</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Hoodies</td>
+                        <td>Face to face</td>
+                        <td>324443</td>
+                        <td>6-09-2020</td>
+                        <td class="td">Details</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Shoes Nickee</td>
+                        <td>Direct payment</td>
+                        <td>862333</td>
+                        <td>10-09-2020</td>
+                        <td class="td">Details</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Foldable mini product</td>
+                        <td>Through voucher</td>
+                        <td>867656</td>
+                        <td>2-04-2020</td>
+                        <td class="td">Details</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Car inventory</td>
+                        <td>Creditcard/paypal</td>
+                        <td>867481</td>
+                        <td>09-12-2020</td>
+                        <td class="td">Details</td>
+                    </tr>
+                </tbody>
+                
+
+            </table>
+        </div>
+    </main>
+    <div class="right">
+        <div class="top">
+            <button id="menu-btn">
+            <span class="material-icons">
+                menu
+                </span>
+            </button>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <span class="material-icons light-mode-icon">light_mode</span>
+                <span class="material-icons dark-mode-icon">dark_mode</span>
+            </div>
+        </div>
+        <div class="recent-update">
+            <h2 class="h3">Recent Update</h2>
+            <div class="update">
+                <div class="profile-phote">
+                    <img src="back.jpg" alt="logo">
+
+                </div>
+                <div class="message">
+                    <p><span class="span8">Eman watson </span>has received the oppurtunity of the given product and win 10 profit </p>
+                        <small>Two Hours ago...</small>
+                </div>
+            </div>
+            <div class="update">
+                <div class="profile-phote">
+                    <img src="images (3).jpg" alt="logo">
+
+                </div>
+                <div class="message">
+                    <p><span class="span8">julie cates</span> has received the award and provide 10% bonus of this project</p>
+                        <small>One Hours ago...</small>
+                </div>
+            </div>
+            <div class="update">
+                <div class="profile-phote">
+                    <img src="images (2).jpg" alt="logo">
+
+                </div>
+                <div class="message">
+                    <p><span class="span8">Seman duad</span> has received the order before the organization launch the product.</p>
+                    <small>Three Hours ago...</small>
+                </div>
+            </div>
+            <div class="update">
+                <div class="profile-phote">
+                    <img src="download.jpg" alt="logo">
+
+                </div>
+                <div class="message">
+                    <p><span class="span8">Karina dash </span>has recived the award of the first a</p>
+                    <small>Two Hours ago....</small>
+                </div>
+            </div>
+        </div>
+        <div class="Saleoppurtunity3">
+            <h3 class="Sale">Sale Analytics</h2>
+                <div class="itemonline">
+                    <div class="right4">
+                        <span class="material-icons">
+                            add_shopping_cart
+                            </span>
+                        <div class="info">
+                            <h3 class="h3">Online Orders</h3>
+                            <small >Last 25 hours</small>
+                            </div>
+                            <span class="span8">-30%</span>
+                            <h1>333</h1>
+                
+                </div>
+                <div class="right3">
+                    <span class="material-icons">
+                        reviews
+                        </span>
+                    <div class="info">
+                        <h3 class="h3">Customer reviews</h3>
+                        <small >Last 25 hours</small>
+                        </div>
+                        <span class="span8">-30%</span>
+                        <h1>232</h1>
+            
+            </div>
+            <div class="right2">
+                <span class="material-icons">
+                    face_retouching_natural
+                    </span>
+                <div class="info">
+                    <h3 class="h3">New clients</h3>
+                    <small >Last 25 hours</small>
+                    </div>
+                    <span class="span8">-30%</span>
+                    <h1>121</h1>
+        
+        </div>
+        </div>
+    </div>
+</div>
+<script src="Mychart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

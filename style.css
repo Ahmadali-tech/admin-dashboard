@@ -1,0 +1,575 @@
+:root {
+    --color-primary:#7380ec;
+    --color-danger:#ff7782;
+    --color-success:#466888;
+    --color-warming:#ffbb55;
+    --color-info-dark:#7d8daa;
+    --color-dark:#363949;
+    --color-primary-variant:#677482;
+    --color-background:WHITE;
+    --color-light:rgba(132,139,200,0.18);
+    --border-radius-1:0.4rem;
+    --border-radius-2:0.8rem;
+    --border-radius-3 :1.2rem;
+    --card-padding:1.8rem;
+    --padding:1.2rem;
+    --box-shadow:0.2rem 3rem var(--color-light);
+
+
+
+}
+*{
+    margin:0;
+    padding:0;
+    outline: none;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size:14px;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:white;
+    font-size: 0.8rem;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    float: left;
+    gap:1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+    background-color: white;
+    display: flex;
+    box-shadow: 5px 10px 18px  rgb(214, 210, 204);
+}
+a{
+    color:black;
+}
+.close{
+    margin-left: 60%;
+
+}
+img{
+
+    width: 3rem;
+
+}
+h1{
+    font-weight: 800;
+    font-size:1.8rem;
+}
+h2{
+    font-size:1.4rem;
+    margin-left: 2rem;
+}
+h3{
+    font-size:0.87rem;
+}
+aside{
+    height: 100vh;
+    width: 130%;
+    background-color: white;
+    box-shadow: 5px 10px 18px  rgb(214, 210, 204);
+
+}
+aside.top{
+
+    margin-top:3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo {
+    display: flex;
+    margin-right: 2rem;
+    background-color: white;
+    margin-top: 3rem;
+}
+.primary{
+    color: var(--color-primary);
+}
+.success{
+    color: var(--var-success);
+
+}
+.warning{
+color:var(--color-warming);
+
+}
+aside.logo img{
+    width: 2rem;
+    height: 1rem;
+}
+.material-icons{
+    width: 2.0rem;
+}
+.danger{
+    color: red;
+}
+aside .sidebar a{
+    display: flex;
+    margin-left: 1rem;
+    gap: 0.5rem;
+    align-items: center;
+    position: relative;
+    height: 3rem;
+    transition: all 3000ms ease-out;
+
+}
+aside .sidebar{
+    top:3rem;
+    flex-direction: column;
+    display: flex;
+    height: 86vh;
+    position: relative;
+    background: white;
+}
+aside h3{
+    font-size: 1rem;
+}
+aside.sidebar a span{
+    font-size: 1.6rem;
+    transition: all 3000ms ease-out;
+}
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+.sidebar a.active{
+    background-color:rgb(233, 230, 226);;
+    color: var(--color-primary);
+    margin-left:0;
+
+}
+.span2{
+    color:black;
+    border: 1px solid black;
+    margin-left: 3%;
+    font-weight: 600;
+    font-size: 1rem;
+    font-style: italic;
+    background-color:azure;
+    border-radius: 50%;
+}
+.sidebar a.active::before{
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: var(--color-primary);
+
+}
+.sidebar a.active span{
+    color: var(--color-primary);
+    margin-left:calc(1rem ,3rem);
+}
+.sidebar a:hover span{
+    margin-left: 1rem;
+}
+main{
+    margin-top: 2rem;
+}
+main.date{
+    display: inline-block;
+    background-color: antiquewhite;
+    justify-content: center;
+    box-shadow: 5px 5px 3px  rgb(128, 104, 58);
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+.p5{
+    color: red;
+}
+.main2{
+    display: flex;
+    gap: 0.6;
+    grid-template-columns: repeat(3 ,1fr);
+   
+}
+.data input{
+    padding: 1rem;
+    background-color:white;
+justify-content: center;
+box-shadow: 4px 10px 6px  azure;
+    margin-top: 2%;
+    border-radius: 20%;
+    margin-bottom: 1rem;
+}
+.h4{
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+.sales{
+    background-color:white;
+justify-content: center;
+box-shadow: 5px 10px 18px rgb(214, 210, 204);
+transition: all 1000ms ease-out;
+border-radius: 20%;
+width: 30%;
+}
+.Expences{
+    background-color:white;
+justify-content: center;
+margin-left: 1%;
+box-shadow: 8px 10px 18px  rgb(233, 230, 226);
+transition: all 1000ms ease-out;
+border-radius: 20%;
+width:30%;
+}
+.Revenue{
+    background-color:white;
+justify-content: center;
+margin-left: 1%;
+box-shadow: 5px 10px 9px  rgb(214, 213, 209);
+transition: all 1000ms ease-out;
+width: 30%;
+border-radius: 20%;
+
+}
+.Revenue:hover{
+    box-shadow: none;
+}
+.Expences:hover{
+    box-shadow: none;
+}
+.sales:hover{
+    box-shadow: none;
+}
+.salesAnalytics{
+    margin-left: 13%;
+    margin-top: 3%;
+}
+.RevenueAnalytics span{
+    background-color: lightcoral;
+    border-radius: 40%;
+    color: black;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 2rem;
+}
+.RevenueAnalytics{
+    margin-left: 10%;
+}
+.ExpencesAnalytics{
+    margin-left: 10%;
+}
+.ExpencesAnalytics span{
+    background-color: lightcoral;
+    border-radius: 40%;
+    color: black;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 2rem;
+}
+.salesAnalytics{
+    margin-left: 13%;
+}
+.salesAnalytics span{
+    background-color: lightcoral;
+    border-radius: 40%;
+    color: black;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 2rem;
+}
+.p5{
+    font-size:1.5rem;
+    
+    position: relative;
+    margin-right: 3%;
+    margin-top: 13%;
+}
+.progressbar{
+    display: flex;
+}
+.number3{
+    margin-right: 70%;
+}
+
+.progressbar5{
+    display: flex;
+}
+.progressbar2{
+    display: flex;
+}
+.p4{
+    margin-right: 74%;
+    font-size: 1.2rem;
+    margin-top: 5%;
+    color: red;
+}
+
+
+
+.text-muted{
+    font-size: 1.0rem;
+    margin-left: 30%;
+    font-weight: bold;
+}
+.middle{
+     display: flex;
+    align-items: center;
+}
+.left{
+    margin-left: 2%;
+    justify-content: space-between;
+}
+svg circle{
+    stroke-width: 14;
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-linecap: round;
+    transform: translate(5px ,5px);
+    stroke-dashoffset: 60;
+    stroke-dasharray: 112;
+
+}
+.Revenue svg circle{
+    stroke-width: 14;
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-linecap: round;
+    transform: translate(5px ,5px);
+    stroke-dashoffset: -40;
+    stroke-dasharray: 150;
+
+}
+.sales svg circle{
+    stroke-width: 12;
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-linecap: round;
+    transform: translate(5px ,5px);
+    stroke-dashoffset: 60;
+    stroke-dasharray: 220;
+
+}
+.Expences svg circle{
+    stroke-width: 12;
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-linecap: round;
+    transform: translate(5px ,5px);
+    stroke-dashoffset: 60;
+    stroke-dasharray: 200;
+
+}
+.h5{
+    font-size:1.5rem;
+}
+.left{
+    font-size:1.5rem;
+}
+.Order-section{
+    font-size: 1rem;
+    justify-content: center;
+}
+.Order-section h2{
+    margin-bottom: 1.5rem;
+    font-size: larger;
+
+}
+.Order-section table{
+    background-color:white;
+    border-radius:azure;
+    width: 100%;
+    height: 50vh;
+    margin-top: 7%;
+   
+    align-items: center;
+    margin-right: 4rem;
+    box-shadow: 5px 10px 18px rgb(214, 210, 204);
+}
+.Order-section table:hover{
+    box-shadow: 5px 10px 18px rgb(230, 210, 204);
+    transition: all 4000ms ease-out;
+    cursor: pointer;
+    opacity: 1;
+
+}
+.Order-section table tbody td th{
+    font-size: 3rem;
+}
+
+.Order-section table tbody td{
+    height: 2.5rem;
+    border:  1px solid var(--color-light);
+    margin-left: 10%;
+    font-size: large;
+}
+.Order-section table tbody:last-child td{
+    border:none;
+}
+.Order-section table tbody:first-child td{
+    border:none;
+}
+.right{
+float: left;
+margin-right: 5%;
+
+}
+.right .top{
+    justify-content: end;
+    display: flex;
+    gap:2rem;
+    
+
+}
+.itemonline{
+    background-color:white;
+    box-shadow: 5px 10px 18px rgb(214, 210, 204);
+width: 32vh;
+margin-right: 10rem;
+}
+.span8{
+    color: RED;
+
+}
+.h3{
+    font-size: 2rem;
+}
+
+.theme-toggle{
+    display: flex;
+    width: 2.6rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.1rem;
+    cursor: pointer;
+    
+}
+.theme-toggle span{
+    font-size: 2rem;
+}
+.phote-profile img{
+    width:100%;
+    margin-right: 23%;
+    border-radius: 50%;
+}
+.profile{
+    margin-top: 10%;
+}
+.profile-phote img{
+    border-radius: 50%;
+    width:15% ;
+    background: grey;
+    
+}
+.span6{
+    color: black;
+
+}
+.right .top button{
+    display: none;
+}
+.recent-update{
+    margin-top: 5rem;
+    width: 150%;
+}
+.message{
+    font-size: large;
+    width: 100%;
+}
+.h3{
+    font: 3rem;
+}
+.theme-toggle span2{
+    color: aqua;
+    background-color: lightblue;
+
+}
+.recent-update{
+    background-color:white;
+    padding: 3%;
+    box-shadow: 5px 10px 18px rgb(214, 210, 204);
+width: 32vh;
+margin-right: 10rem;
+}
+.Sale{
+    margin-top: 10%;
+    font-size: 2rem;
+}
+.info{
+    font-size: 2rem;
+}
+ .right2{
+background-color:white;
+box-shadow: 5px 10px 18px rgb(214, 210, 204);
+width: 32vh;
+margin-right: 10rem;
+display: flex;
+margin-right: 3rem;
+padding: 7%;
+
+}
+.right3{
+    margin-top: 3%;
+   margin-bottom: 6%;
+    background-color:white;
+    box-shadow: 5px 10px 18px rgb(214, 210, 204);
+width: 32vh;
+margin-right: 10rem;
+display: flex;
+margin-right: 3rem;
+padding: 3%;
+
+}
+.right4{
+margin-top: 8%;
+margin-bottom: 13%;
+background-color:white;
+box-shadow: 5px 10px 18px rgb(214, 210, 204);
+ width: 32vh;
+ margin-right: 10rem;
+ display: flex;
+ margin-right: 3rem;
+ padding: 3%;
+
+}
+.GRAPHBOX{
+    position: relative;
+    width: 50%;
+    padding: 10px;
+    display: grid;
+   grid-template-columns: 2fr ,1fr;
+   grid-gap:20px;
+}
+.ADDCHART .box canvas{
+    margin-top:1.5rem;
+    background-color:white;
+    box-shadow: 5px 10px 18px rgb(214, 210, 204);
+    width: 20%;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    display: flex;
+}
+.ADDCHART .box canvas{
+    margin-top:1.5rem;
+    background-color:white;
+    box-shadow: 5px 10px 18px rgb(214, 210, 204);
+    width: 20%;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    display: flex;
+
+}
+
+
+/* Define your light mode styles here */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Define your dark mode styles here */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
